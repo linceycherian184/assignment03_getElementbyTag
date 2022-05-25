@@ -1,0 +1,3 @@
+What is the difference between queryselector and queryselectorall?
+
+queryselector selects only a single element which matches the selector while queryselectorall selects all the elements which matches the selectors.

@@ -9,7 +9,9 @@ var  i = keys.length; //6
 
 let stringifiedDetailsOfPeople, userDeserial;
 
-if (document.readyState !== "loading") {
+document.addEventListener("DOMContentLoaded", () => {
+    console.log("Loading.....");
+    
     Object.keys(localStorage).forEach((key) => {
         
         if (key.match(/userDetails/g)) {
@@ -18,7 +20,7 @@ if (document.readyState !== "loading") {
             addNewLineElement(userDeserial);
         }
     });
-}
+  });
 
 myForm.addEventListener('submit', onSubmit);
 
